@@ -3,6 +3,7 @@ from sklearn.utils import check_random_state
 from sklearn.neighbors import NearestNeighbors
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
+from . import logger
 
 class tSMOTE:
     def __init__(self, k_neighbors=5, random_state=None, n_slices=10, sampling_strategy='auto'):

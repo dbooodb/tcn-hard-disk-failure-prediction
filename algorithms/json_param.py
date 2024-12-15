@@ -1,6 +1,6 @@
 import os
 import json
-import logger
+from . import logger
 from datetime import datetime
 
 

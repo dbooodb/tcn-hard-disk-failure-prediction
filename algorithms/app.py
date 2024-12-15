@@ -1,5 +1,5 @@
 import gradio as gr
-from Classification import initialize_classification, set_training_params
+from .Classification import initialize_classification, set_training_params
 import argparse
 import sys
 

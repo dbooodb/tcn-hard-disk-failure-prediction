@@ -1,12 +1,14 @@
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV, cross_val_score, StratifiedKFold
 from sklearn.metrics import accuracy_score, roc_auc_score, make_scorer, silhouette_score
 from sklearn.utils import shuffle
+import torch
+import torch.nn as nn
 import torch.optim as optim
-import logger
+from . import logger
 from joblib import dump
-from json_param import save_best_params_to_json, load_best_params_from_json
+from .json_param import save_best_params_to_json, load_best_params_from_json
 from ray import tune
-from Networks_pytorch import *
+from .Networks_pytorch import *
 from tqdm import tqdm
 from datetime import datetime
 import socket

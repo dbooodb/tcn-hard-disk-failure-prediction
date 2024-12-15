@@ -3,7 +3,7 @@ import os
 import modin.pandas as pd
 import sys
 from sklearn.cluster import DBSCAN
-from Dataset_manipulation import *
+from .Dataset_manipulation import *
 if not sys.warnoptions:
     import warnings
     warnings.simplefilter("ignore")
@@ -16,13 +16,13 @@ from xgboost import XGBClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.naive_bayes import GaussianNB
 from rgf.sklearn import RGFClassifier
-import logger
+from . import logger
 import ray
 from ray import tune
 from ray.tune.schedulers.async_hyperband import ASHAScheduler
 from ray.tune import CLIReporter
-from json_param import save_best_params_to_json, load_best_params_from_json, save_params_to_json
-from network_training import train_and_evaluate_model, train_dl_model
+from .json_param import save_best_params_to_json, load_best_params_from_json, save_params_to_json
+from .network_training import train_and_evaluate_model, train_dl_model
 
 
 # Define default global values

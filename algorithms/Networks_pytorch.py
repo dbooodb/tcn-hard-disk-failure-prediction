@@ -9,7 +9,11 @@ from collections import deque
 from torch.utils.tensorboard import SummaryWriter
 from datetime import datetime
 import os
-import logger
+import sys
+import os.path
+# 添加父目录到系统路径
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from . import logger
 from torch.optim.lr_scheduler import ReduceLROnPlateau, ExponentialLR, StepLR
 from torch.autograd import grad
 from torch.utils.data import DataLoader

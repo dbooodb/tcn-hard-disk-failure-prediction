@@ -7,6 +7,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.preprocessing import LabelEncoder
 from deap import creator, base, tools, algorithms
 from tqdm import tqdm
+from . import logger
 
 
 class GeneticFeatureSelector:

@@ -5,6 +5,7 @@ import pickle
 import math
 from sklearn.model_selection import train_test_split
 from imblearn.under_sampling import RandomUnderSampler
+from . import logger
 
 
 def plot_feature(dataset):

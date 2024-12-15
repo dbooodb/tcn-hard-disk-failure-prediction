@@ -12,9 +12,9 @@ import scipy
 import scipy.stats
 import re
 from collections import Counter
-import logger
+from . import logger
 from tqdm import tqdm
-from GeneticFeatureSelector import GeneticFeatureSelector
+from .GeneticFeatureSelector import GeneticFeatureSelector
 from scipy.stats import skew
 from imblearn.pipeline import Pipeline
 from sklearn.decomposition import PCA
