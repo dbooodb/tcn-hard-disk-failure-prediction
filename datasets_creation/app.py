@@ -1,11 +1,11 @@
 import gradio as gr
 import argparse
 import os
-from get_dataset import get_dataset
-from save_to_list import save_to_list
-from save_to_pkl import save_to_pkl
-from save_to_grouped_list import save_to_grouped_list
-from save_to_mysql import save_to_mysql
+from .get_dataset import get_dataset
+from .save_to_list import save_to_list
+from .save_to_pkl import save_to_pkl
+from .save_to_grouped_list import save_to_grouped_list
+from .save_to_mysql import save_to_mysql
 
 
 base_url = 'https://f001.backblazeb2.com/file/Backblaze-Hard-Drive-Data/'
