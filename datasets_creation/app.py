@@ -81,14 +81,14 @@ grouped_list_iface = gr.Interface(
         gr.Textbox(label="Output Directory", value=output_dir, info='Enter the output directory to save the data.'),
     ],
     outputs=gr.Textbox(placeholder="See result below.", label="Result"),
-    description="Save the data to a pickle file as list.",
+    description="Save the data to a grouped list.",
 )
 
 demo = gr.TabbedInterface(
     [data_iface, list_iface, pkl_iface, mysql_iface, grouped_list_iface],
-    ["Download Data", "Save to List", "Save to PKL", "Save to MySQL Database", "Save to Grouped List"],
+    ["Download Data", "Save to List", "Save to Pickle", "Save to MySQL", "Save to Grouped List"],
     title="Prognostika - Hard Disk Failure Prediction Model Dataset Creation Dashboard",
 )
 
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(share=True)
